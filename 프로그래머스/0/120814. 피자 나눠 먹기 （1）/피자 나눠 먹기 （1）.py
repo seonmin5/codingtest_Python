@@ -5,4 +5,3 @@ def solution(n):
         return n // 7
     else:
         return (n // 7) + 1
-    
