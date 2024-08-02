@@ -1,8 +1,9 @@
 def solution(strArr):
-    answer = []
-    for i in strArr:
-        if "ad" not in i:
-            answer.append(i)
+    i = 0
+    while i < len(strArr):
+        if "ad" in strArr[i]:
+            strArr.remove(strArr[i])
         else:
-            continue
-    return answer
+            i += 1
+    return strArr
+            
