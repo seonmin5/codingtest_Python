@@ -1,4 +1,3 @@
 def solution(n, k):
-    if n >= 10:
-        k -= (n//10)
-    return (n*12000) + (max(k, 0)*2000)
+    # n인분이 10인분일 때마다 k-1
+    return (n * 12000) + ((k - n // 10)*2000)
