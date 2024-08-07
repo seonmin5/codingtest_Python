@@ -1,13 +1,6 @@
 def solution(s):
-    countP = 0
-    countY = 0
     lowerS = s.lower()
-    for i in lowerS:
-        if i == "p":
-            countP += 1
-        elif i == "y":
-            countY += 1
-    if countP == countY:
+    if lowerS.count("p") == lowerS.count("y"):
         return True
     else:
         return False
