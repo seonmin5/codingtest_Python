@@ -1,4 +1,2 @@
 def solution(n):
-    nList = list(map(int, str(n)))
-    nList.reverse()
-    return nList
+    return list(map(int, reversed(str(n))))
