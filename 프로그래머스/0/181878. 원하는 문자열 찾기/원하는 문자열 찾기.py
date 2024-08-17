@@ -1,7 +1,3 @@
 def solution(myString, pat):
-    lowerString = myString.lower()
-    lowerPat = pat.lower()
-    if lowerPat in lowerString:
-        return 1
-    else:
-        return 0
+    # True 1, False 0 반환
+    return int(pat.lower() in myString.lower())
