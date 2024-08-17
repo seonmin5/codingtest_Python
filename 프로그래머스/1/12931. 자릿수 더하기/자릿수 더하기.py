@@ -1,3 +1,3 @@
 def solution(n):
-    nList = list(str(n))
-    return (sum(map(lambda x: int(x), nList)))
+    nList = list(map(int, list(str(n))))
+    return (sum(nList))
