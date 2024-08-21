@@ -1,12 +1,5 @@
 def solution(num_list):
-    result1 = 0
-    result2 = 0
-    for i in range(len(num_list)):
-        if i % 2 == 0:
-            result1 += num_list[i]
-        else:
-            result2 += num_list[i]
-    if result1 > result2:
-        return result1
-    else:
-        return result2
+    # 첫번째 원소 1 -> index[0] 매칭
+    # 홀수번째 원소 합, 짝수 번째 원소 합 => 큰 값 return
+    return max(sum(num_list[::2]), sum(num_list[1::2]))
+    
