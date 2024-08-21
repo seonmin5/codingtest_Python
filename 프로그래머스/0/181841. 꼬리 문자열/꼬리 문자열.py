@@ -1,8 +1,8 @@
 def solution(str_list, ex):
     answer = ''
     for i in str_list:
-        if ex in i:
-            answer += ''
-        else:
+        if ex not in i:
             answer += i
+        else:
+            continue
     return answer
