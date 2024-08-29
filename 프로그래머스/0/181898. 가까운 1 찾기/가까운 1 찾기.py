@@ -1,5 +1,6 @@
 def solution(arr, idx):
-    answer = ''
-    for i in arr:
-        answer += str(i)
-    return (answer.find("1", idx))
+    # 찾을 문자, 시작지점, 종료지점
+    try:
+        return arr.index(1, idx)
+    except ValueError:
+        return -1
