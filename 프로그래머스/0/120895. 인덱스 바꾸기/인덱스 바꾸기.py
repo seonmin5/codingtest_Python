@@ -1,11 +1,4 @@
 def solution(my_string, num1, num2):
-    myList = list(my_string)
-    answer = []
-    for i in range(len(myList)):
-        if i == num1:
-            answer.append(myList[num2])
-        elif i == num2:
-            answer.append(myList[num1])
-        else:
-            answer.append(myList[i])
-    return (''.join(answer))
+    my_list = list(my_string)
+    my_list[num1], my_list[num2] = my_list[num2], my_list[num1]
+    return ''.join(my_list)
