@@ -1,6 +1,3 @@
 def solution(myString):
-    splitString = myString.split('x')
-    # 빈 문자열 = 거짓
-    result = [s for s in splitString if s]
-    result.sort()
-    return result
+    # sample_list = list(filter(None, sample_list))
+    return sorted(list(filter(None, myString.split("x"))))
