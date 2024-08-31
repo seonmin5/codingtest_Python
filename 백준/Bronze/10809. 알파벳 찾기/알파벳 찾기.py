@@ -1,13 +1,19 @@
-import string
-import sys
-lowerList = list(string.ascii_lowercase)
-input = sys.stdin.readline
+'''
+문제 링크: https://www.acmicpc.net/problem/10809
+시간: ms
+메모리: MB
+PR 제목 : 날짜 사이트_명 문제_번호 사용_언어
+'''
 
-word = input()
-answer = []
-for l in lowerList:
-    if l not in word:
-        answer.append("-1")
-    else:
-        answer.append(str(word.index(l)))
-print(' '.join(answer))
+import sys
+import string
+input = sys.stdin.readline
+lowerList = string.ascii_lowercase
+
+s = input().strip()
+result = []
+
+for chr in lowerList:
+    result.append(str(s.find(chr)))
+
+print(' '.join(result))
