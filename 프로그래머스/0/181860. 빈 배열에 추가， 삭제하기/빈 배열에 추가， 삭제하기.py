@@ -1,10 +1,8 @@
 def solution(arr, flag):
-    result = []
-    
-    for i in range(len(arr)):
-        if flag[i]:
-            result += [arr[i]]*2*arr[i]
+    x = []
+    for idx, f in enumerate(flag):
+        if f == True:
+            x += [arr[idx]] * 2 * arr[idx]
         else:
-            result = result[:-arr[i]]
-    
-    return result
+            x = x[:-arr[idx]]
+    return x
