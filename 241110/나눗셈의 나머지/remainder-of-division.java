@@ -10,16 +10,16 @@ public class Main {
         int a = Integer.parseInt(st.nextToken());
         int b = Integer.parseInt(st.nextToken());
 
-        int[] arr = new int[b];
+        int[] arr = new int[10];
         int result = 0;
 
-        while (a >= 1) {
+        while (a > 0) {
             int n = a % b;
             arr[n]++;
             a = a / b;
         }
 
-        for (int i = 0; i < b; i++) {
+        for (int i = 0; i < 10; i++) {
             result += arr[i]*arr[i];
         }
 
