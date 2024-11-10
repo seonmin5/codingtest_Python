@@ -13,7 +13,7 @@ public class Main {
         int[] arr = new int[10];
         int result = 0;
 
-        while (a >= 1) {
+        while (a > 1) {
             a = a / b;
             int n = a % b;
             arr[n]++;
