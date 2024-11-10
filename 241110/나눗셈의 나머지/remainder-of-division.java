@@ -2,7 +2,6 @@ import java.io.IOException;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
-import java.lang.Math;
 
 public class Main {
     public static void main(String[] args) throws IOException{
@@ -11,7 +10,7 @@ public class Main {
         int a = Integer.parseInt(st.nextToken());
         int b = Integer.parseInt(st.nextToken());
 
-        int[] arr = new int[10];
+        int[] arr = new int[b];
         int result = 0;
 
         while (a >= 1) {
@@ -20,8 +19,8 @@ public class Main {
             a = a / b;
         }
 
-        for (int i = 0; i < 10; i++) {
-            result += Math.pow(arr[i], 2);
+        for (int i = 0; i < b; i++) {
+            result += arr[i]*arr[i];
         }
 
         System.out.print(result);
